@@ -84,3 +84,50 @@ char ler_teclado() {
     }
     return '\0';
 }
+
+// Liga um LED
+void ligar_led(uint led_pin) {
+    gpio_put(led_pin, true);
+}
+
+// Desliga um LED
+void desligar_led(uint led_pin) {
+    gpio_put(led_pin, false);
+}
+
+int main() {
+    stdio_init_all();  
+    init_gpio();       
+
+    while (true) {
+        char key = ler_teclado();
+        if (key != '\0') {
+            printf("Tecla Pressionada: %c\n", key);
+
+            // Processa tecla pressionada
+            switch (key) {
+                case 'A': ligar_led(LED_RED); break;
+                case 'B': ligar_led(LED_BLUE); break;
+                case 'C': ligar_led(LED_GREEN); break;
+                case 'D':
+                    ligar_led(LED_RED);
+                    ligar_led(LED_GREEN);
+                    ligar_led(LED_BLUE);
+                    break;
+                case '#': tocar_buzzer(1000); break;
+                default:
+                    desligar_led(LED_RED);
+                    desligar_led(LED_GREEN);
+                    desligar_led(LED_BLUE);
+                    break;
+            }
+
+            sleep_ms(500);  // Debounce
+
+            // Desliga LEDs após debounce
+            desligar_led(LED_RED);
+            desligar_led(LED_GREEN);
+            desligar_led(LED_BLUE);
+        }
+    }
+}
