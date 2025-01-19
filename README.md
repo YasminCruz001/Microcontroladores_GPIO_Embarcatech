@@ -30,6 +30,6 @@ Utilize o teclado matricial para controlar os LEDs e o buzzer conforme a tabela 
 - Tecla '#': Ativa o buzzer.
 - Para qualquer outra tecla os LEDs são desligados
 
-## Vídeo Demonstrativo  
+## Vídeo Demonstrativo
 
 [Assista aqui](https://drive.google.com/file/d/19fvOIXpC9LnWddD3quGJKDLPbh8MUfL0/view?usp=drive_link)
