@@ -1,5 +1,4 @@
-## Controle de GPIO com Teclado Matricial 
-## 4x4 e Raspberry Pi Pico
+# Controle de GPIO com Teclado Matricial 4x4 e Raspberry Pi Pico
 Tarefa 2 - Unidade 4
 
 ## Integrantes
