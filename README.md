@@ -16,6 +16,10 @@ Este projeto utiliza um teclado matricial 4x4 para controlar três LEDs RGB e um
 2. Abra o projeto no VS Code.
 3. Abra o arquivo `diagram.json` no Wokwi para visualizar a simulação dos componentes.
 
+## Vídeo Demonstrativo  
+
+[Vídeo Demonstrativo](https://drive.google.com/file/d/19fvOIXpC9LnWddD3quGJKDLPbh8MUfL0/view?usp=drive_link)
+
 ## Execução
 Utilize o teclado matricial para controlar os LEDs e o buzzer conforme a tabela abaixo:
 
