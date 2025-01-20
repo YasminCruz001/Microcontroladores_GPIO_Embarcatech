@@ -1,5 +1,5 @@
 # Controle de GPIO com Teclado Matricial 4x4 e Raspberry Pi Pico
-Tarefa 2 - Unidade 4
+Tarefa 1 - Unidade 4
 
 ## Integrantes
 - Yasmin Damasceno Cruz (TIC370101610)
